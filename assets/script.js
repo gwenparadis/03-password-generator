@@ -16,16 +16,16 @@ const special = ["~!@#$%^&*()_+"];
 let passwordChar = [];
 let password = "";
 
-//TO DO: Generate Passwork function with Acceptance Criteria
+//TO DO: Generate Password function with Acceptance Criteria
 
 function generatePassword() {
-  // First prompt asking for users password length
+  // First prompt asking for user desired password length
   let passwordLength = prompt("Choose the length of your password. This needs to be between 8 - 128");
   if (!passwordLength || passwordLength <= 7 || passwordLength >= 129) {
-    return alert("Choose a number between 8-128.");
+    return alert("Choose a number between 8-128, or the result will be undefined.");
   }
 
-  //prompts and code responses to choose Password Characters
+  // prompts and code responses to choose Password Characters
   let lowercase = confirm("Click ok if would you like your password to contain lowercase letters.");
   if (lowercase === true) {
     passwordChar += lower;
@@ -41,13 +41,15 @@ function generatePassword() {
   specials = confirm("Click ok if would you like your password to contain special characters.");
   if (specials === true) {
     passwordChar = passwordChar.concat(special);
+  } else {
+    confirm("You must select at least one of these character types, or the result will be undefined.");
   }
 
-//for loop to combine all of the input from prompts and character selections
+// for loop to combine all of the input from prompts and character selections
   for (let i = 0; i < passwordLength; i++) {
     password += passwordChar[Math.floor(Math.random() * passwordChar.length)]
   }
-
+// create the final password to be written by writePassword function
   return (password);
 }
 
