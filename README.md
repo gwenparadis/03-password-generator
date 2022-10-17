@@ -5,7 +5,7 @@ I completed the interactive component of this webpage using JavaScript in order 
 
 ## Installation
 
-This webpage can be accessed on Github Pages, at the link:
+This webpage can be accessed on Github Pages, at the link: https://gwenparadis.github.io/03-password-generator/
 
 ## Usage
 
