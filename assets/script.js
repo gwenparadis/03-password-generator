@@ -25,7 +25,7 @@ function generatePassword() {
     return alert("Choose a number between 8-128.");
   }
 
-  // remaining prompts
+  //prompts and code responses to choose Password Characters
   let lowercase = confirm("Click ok if would you like your password to contain lowercase letters.");
   if (lowercase === true) {
     passwordChar += lower;
@@ -43,16 +43,13 @@ function generatePassword() {
     passwordChar = passwordChar.concat(special);
   }
 
-  console.log("passwordChar", passwordChar)
-
-  // select random characters from the user input
+//for loop to combine all of the input from prompts and character selections
   for (let i = 0; i < passwordLength; i++) {
     password += passwordChar[Math.floor(Math.random() * passwordChar.length)]
   }
 
   return (password);
 }
-
 
 // Write password to the #password input
 function writePassword() {
@@ -64,6 +61,5 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", function () {
-  generatePassword();
   writePassword();
 });
