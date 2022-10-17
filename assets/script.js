@@ -41,15 +41,14 @@ function generatePassword() {
   specials = confirm("Click ok if would you like your password to contain special characters.");
   if (specials === true) {
     passwordChar = passwordChar.concat(special);
-  } else {
-    confirm("You must select at least one of these character types, or the result will be undefined.");
   }
+  confirm("Reminder! If you did not select at least one of these character types, the result will be undefined.");
 
-// for loop to combine all of the input from prompts and character selections
+  // for loop to combine all of the input from prompts and character selections
   for (let i = 0; i < passwordLength; i++) {
     password += passwordChar[Math.floor(Math.random() * passwordChar.length)]
   }
-// create the final password to be written by writePassword function
+  // create the final password to be written by writePassword function
   return (password);
 }
 
