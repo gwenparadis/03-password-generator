@@ -1,7 +1,7 @@
 # 03 JavaScript: Password Generator
 
 ## Description
-I completed the interactive component of this webpage using JavaScript in order to allow the user to generate a random password containing 5 criteria: password length, and the choice of 4 character types (lowercase letters, uppercase letters, numbers, and special characters). This project showcases the skills that I have learned in JavaScript. This webpage specifically highlights the addition of an Event Listener (functional button that initiates the JavaScript code to generate a random and original password), function writing, else if statements, for loop, confirm(), alert(), and prompt() components. I learned how to debug a complicated else if statement by randomizing and combining arrays with element.concat() in order to include the multiple character types in one new original array, displayed as the user's random password.
+I completed the interactive component of this webpage using JavaScript in order to allow the user to generate a random password containing 5 criteria: password length, and the choice of 4 character types (lowercase letters, uppercase letters, numbers, and special characters). This project showcases the skills that I have learned in JavaScript. This webpage specifically highlights the addition of an Event Listener (functional button that initiates the JavaScript code to generate a random and original password), function writing, else if statements, for loop, confirm(), alert(), and prompt() components. I learned how to create strong if statements utilizing user input, in order to include the multiple character types in one new original array, displayed as the user's random password.
 
 ## Installation
 

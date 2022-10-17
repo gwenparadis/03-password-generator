@@ -32,15 +32,15 @@ function generatePassword() {
   }
   uppercase = confirm("Click ok if would you like your password to contain uppercase letters.");
   if (uppercase === true) {
-    passwordChar = passwordChar.concat(upper);
+    passwordChar += upper;
   }
   numbers = confirm("Click ok if would you like your password to contain numbers.");
   if (numbers === true) {
-    passwordChar = passwordChar.concat(num);
+    passwordChar += num;
   }
   specials = confirm("Click ok if would you like your password to contain special characters.");
   if (specials === true) {
-    passwordChar = passwordChar.concat(special);
+    passwordChar += special;
   }
   confirm("Reminder! If you did not select at least one of these character types, the result will be undefined.");
 
